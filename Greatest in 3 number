@@ -1,0 +1,9 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int a=2,b=5,c=8;
+		String result = (a>b)?"A is greatest":(b>c)?"B is greatest":"C is greatest";
+		System.out.printf("Answer: %s", result);
+	}
+}
