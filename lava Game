@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+	    int inp=sc.nextInt();
+	    if(inp >=90 && inp<=100){
+	        System.out.print("Safe zone");
+	    }
+	    else if(inp >=70 && inp<=89){
+	        System.out.print("Warning zone\n");
+	        if(inp%5==0){
+	            System.out.print("Sheild Activated");
+	        }}
+	    else if(inp >=50 && inp<=69){
+	       System.out.print("Burn Zone\n");
+	       if(inp%2==0){
+	           System.out.print("Chance to escape");
+	            }
+	        }
+	    else if(inp < 0 || inp > 100){
+	       System.out.print("Game Error");
+	        }
+	    }
+	}
+
