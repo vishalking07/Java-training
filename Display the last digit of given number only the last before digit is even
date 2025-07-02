@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main
+{
+public static void main(String[] args) {
+Scanner sc = new Scanner (System.in);
+int num = sc.nextInt();
+int dup;
+dup =num;
+dup /=10;
+dup %=10;
+num%=10;
+if(dup%2==0){
+System.out.printf("Last no:%d ",num );
+}
+else{
+System.out.printf("The before number %d is odd so not applicable",dup);
+}
+}
