@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		int n = sc.nextInt();
+		int digit=0,temp=0,num=n,total=0;
+		while(n>0){
+		 digit =n%10;
+		 temp=digit*digit*digit;
+		 total+=temp;
+		 n=n/10;
+		}
+		if(total==num){
+		    System.out.printf("Armstrong Number:%d",total);
+		}
+		else{
+		    System.out.printf("Nope:%d",total);
+		}
+	}
+}
