@@ -1,0 +1,29 @@
+import java .util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		int n = sc.nextInt();
+		int digit=0,sum=0,fd=0,tot=0,num=n,count=0;
+		while(n>0){
+		    n=n/10;
+		    count++;
+		}
+		  if(count%2==0){
+		    digit=num%100;
+		    fd=num/100;
+		    sum = fd+digit;
+		    tot=sum*sum;
+		    System.out.printf("Sum:%d", sum);
+		if(num==tot){
+		    System.out.printf("\ntech nuber- %d",tot);
+		}
+		else{
+		    System.out.printf("\nNope -%d",tot);
+		}
+	}
+	    else{
+	        System.out.print("Odd number");
+	    }
+	}
+}
