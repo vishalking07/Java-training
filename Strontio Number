@@ -1,0 +1,30 @@
+import java .util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		int n = sc.nextInt();
+		int temp=0,digit=0,count=0,val=temp;
+	    temp = n*2;
+	    int me=temp;
+		while(temp>0){
+		    temp=temp/10;
+		    count++;
+		}
+		  if(count==4){
+		       digit= (val/10)%100;
+		      int m1=digit/10;
+		      int m2=digit%10;
+		      if(m1==m2){
+		          System.out.printf("Sternito Number: %d",me);
+		      }
+		      else{
+		          System.out.print("Not Sternito");
+		      }
+		  }
+		  else{
+		      System.out.print("Invalid digit");
+		  }
+		   
+	}
+}
