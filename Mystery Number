@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n = sc.nextInt();
+		int dig=0,rev=0,num=n,tot=0;
+		int s=n/2;
+
+		for (int i=n; i>s; i--) {
+			rev=0;
+			int temp=i;
+			while(temp>0) {
+				dig=temp%10;
+				rev=(rev*10)+dig;
+				temp/=10;
+			}
+			tot=rev+i;
+			if(tot==num) {
+				System.out.print(tot);
+				System.out.print("\nMystery Nuber");
+			    return;
+			}
+
+		}
+		System.out.print(tot);
+		System.out.print("\nNope");
+	}
+}
