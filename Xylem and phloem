@@ -1,0 +1,28 @@
+import java .util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int dig=0,ld=0,mid=0,val1=0,val2=0,temp=0,m1=0,m2=0,tot=0;
+	
+		    dig=n%10;
+		    n=n/10;
+		    while(n>10){
+		        temp=n%10;
+		        val1=val1+temp;
+		        n/=10;
+		    }
+		    tot=dig+n;
+		    System.out.print(tot);
+		    System.out.print(" ");
+		    System.out.print(val1);
+            if(tot==val1){
+                System.out.print("Xylem");
+            }
+            else{
+                System.out.print("Phloem");
+            }
+	
+	}
+}
